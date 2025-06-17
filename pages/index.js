@@ -12,10 +12,8 @@ export default function Home() {
     const formData = new FormData();
     formData.append("image", file);
 
-   const response = await fetch("https://polii76-chorusx-fastapi-backend.hf.space/verdict", {
-  method: "POST",
-  body: formData
-});
+ const response = await fetch("https://Poli76-chorusx-fastapi-backend.hf.space/verdict", {
+
 
 
     const data = await response.json();
