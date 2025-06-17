@@ -12,10 +12,11 @@ export default function Home() {
     const formData = new FormData();
     formData.append("image", file);
 
-    const response = await fetch("https://chorusx-fastapi-backend-poli76.hf.space/verdict", {
-      method: "POST",
-      body: formData
-    });
+   const response = await fetch("https://polii76-chorusx-fastapi-backend.hf.space/verdict", {
+  method: "POST",
+  body: formData
+});
+
 
     const data = await response.json();
     setVerdict(data);
